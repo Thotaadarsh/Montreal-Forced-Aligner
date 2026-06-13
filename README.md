@@ -185,25 +185,13 @@ mfa validate ~/mfa_project/corpus ~/mfa_project/custom.dict
 ### Using MFA Default Dictionary
 
 ```bash
-mfa align \
-~/mfa_project/corpus \
-english_us_arpa \
-english_us_arpa \
-~/mfa_project/output \
---overwrite \
---num_jobs 4
+mfa align corpus english_us_arpa english_us_arpa output --overwrite --num_jobs 4
 ```
 
 ### Using Custom Dictionary
 
 ```bash
-mfa align \
-~/mfa_project/corpus \
-~/mfa_project/custom.dict \
-english_us_arpa \
-~/mfa_project/output \
---overwrite \
---num_jobs 4
+mfa align corpus custom.dict english_us_arpa output --overwrite --num_jobs 4
 ```
 
 ---
